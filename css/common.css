@@ -1,0 +1,74 @@
+﻿@charset utf-8;
+/* CSS Document */
+/***************************************
+*	Version 		15.00.01
+*	Author			wuwg
+*  	CreateTime      15.04.27
+ *	UpdateTime		15.04.27
+* *************************************************/
+ 
+ 
+/**************************************
+*name     		 layout
+*status   		 start
+*CreatTime 		 15.04.27
+**************************************/
+.fd-contain {
+		background-color:#fff;
+		min-width:1000px;
+		overflow:hidden;
+	}
+.fd-content ,
+.fd-header,
+.fd-content,
+.fd-footer {
+		width:100%;;
+	}	
+.fd-header{
+	height: 35px;
+	background-color:#c23939;
+    overflow: hidden;
+}
+.fd-main {
+    width: 1000px;
+    margin: 0 auto;
+}
+.fd-content{
+    margin-top: 14px;
+    background-color: #eaecee;
+}
+.fd-footer{
+	
+}
+.fd-header-in ,.fd_main,.fd-footer-in{
+    margin:0 auto;
+    width:1000px;
+}
+.fd-nav {
+    width: 100%;
+    height: 473px;
+    box-shadow: 0px 1px 3px #d3d3d3;
+    background-color: #fff;
+}
+/*--------------------  header start   --------------------*/
+.fd-nav-title {
+    width: 100%;
+    height: 96px;
+    box-shadow: 0px 1px 3px #d3d3d3;
+}
+
+/*--------------------  footer  --------------------*/
+/*----------------  2    ---------------- */
+/*------------   3 ------------*/
+/*--------   4 -------- */
+/*----  5 ----*/
+/*6 */
+
+
+/**************************************
+*name     		 theme
+*status    		 end
+*CreatTime 		 15.04.27
+**************************************/
+
+
