@@ -14,7 +14,7 @@
 *CreatTime 		 15.04.27
 **************************************/
 .fd-contain {
-		background-color:#fff;
+		background-color:#f5f5f5;
 		min-width:1000px;
 		overflow:hidden;
 	}
@@ -35,7 +35,6 @@
 }
 .fd-content{
     margin-top: 14px;
-    background-color: #eaecee;
 }
 .fd-footer{
 	
@@ -55,6 +54,18 @@
     width: 100%;
     height: 96px;
     box-shadow: 0px 1px 3px #d3d3d3;
+}
+.fd-item-01 {
+    width: 100%;
+    height: 630px;
+    border: 1px solid #c23939;
+}
+.fd-item-02 {
+    margin-top: 14px;
+    width: 100%;
+    height: 352px;
+    border: 1px solid #c23939;
+
 }
 
 /*--------------------  footer  --------------------*/
