@@ -290,12 +290,12 @@
     font: 12px/24px "microsoft yahei";
     color: #7e8185;
 }
-.fd-module-title {
+.fd-h3-layer {
     width: 626px;
     height: 37px;
     border-bottom: 1px solid #e3e1e1;
 }
-.fd-module-title > span {
+.fd-module-title {
     display: inline-block;
     padding-left: 14px;
     width: 85px;
@@ -304,6 +304,9 @@
     background: url("../images/module-title-bg.png") no-repeat 2px center;
     font: 18px/34px "microsoft yahei";
     color: #000;
+}
+.fd-item-02 .fd-module-title {
+    border-bottom: 0;
 }
 .fd-module-con {
     width: 626px;
@@ -422,13 +425,14 @@
 }
 .fd-item-02 {
     margin-top: 14px;
-    width: 100%;
-    height: 352px;
+    padding: 19px 12px 19px;
+    width: 97.6%;
+    height: 317px;
     border: 1px solid #ededed;
     border-top: 4px solid #d94d4c;
     background-color: #fff;
-
 }
+
 
 .fd-item-02 .fd-layer {
     margin-top: 23px;
@@ -437,8 +441,29 @@
     float: left;
     width: 280px;
 }
+.fd-data-list > ul {
+    width: 212px;
+    margin: 0 auto;
+}
+.fd-data-list >h4 {
+    font: 20px/22px "microsoft yahei";
+    color: #253341;
+    text-align: center;
+}
 .border-line {
     border-right: 1px solid #e3e1e1;
+}
+.fd-list-li {
+    margin-bottom: 45px;
+}
+.fd-list-li > a {
+    margin-left: ;
+    font: 13px/22px "microsoft yahei";
+    color: #253341;
+}
+.fd-list-date {
+    font: 14px/22px "microsoft yahei";
+    color: #d94d4c;
 }
 /*--------------------  footer  --------------------*/
 .fd-footer-in {
