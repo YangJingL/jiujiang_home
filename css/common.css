@@ -503,19 +503,15 @@
     background-color: #fff;
 }
 .fd-link {
-    display: inline-table;
+    display: inline-block;
     width: 98%;
     height: 106px;
     margin: 0 auto;
     border-bottom: 1px solid #e9e9e9;
+    vertical-align: middle;
     overflow: hidden;
 }
 .fd-link >span {
-    /*
-    display: inline-block;
-    */
-    width: 91px;
-    height: 72px;
 
 }
 .fd-right {
