@@ -424,10 +424,14 @@
     text-align: center;
 }
 .fd-item-02 {
+    position: relative;
     margin-top: 14px;
-    padding: 19px 12px 19px;
+    box-sizing: border-box;
+    padding: 18px 7px;
     width: 97.6%;
+    /*
     height: 317px;
+    */
     border: 1px solid #ededed;
     border-top: 4px solid #d94d4c;
     background-color: #fff;
@@ -439,7 +443,10 @@
 }
 .fd-data-list {
     float: left;
-    width: 280px;
+    width: 278px;
+}
+.fd-layer .fd-data-list:first-child {
+    width: 249px;
 }
 .fd-data-list > ul {
     width: 212px;
@@ -456,14 +463,35 @@
 .fd-list-li {
     margin-bottom: 45px;
 }
-.fd-list-li > a {
-    margin-left: ;
-    font: 13px/22px "microsoft yahei";
-    color: #253341;
+.fd-list-li:last-child {
+    margin-bottom: 10px;
 }
 .fd-list-date {
+    display: inline-block;
+    width: 39px;
+    text-align: right;
     font: 14px/22px "microsoft yahei";
     color: #d94d4c;
+}
+.fd-list-date .year {
+    font: 12px/22px "microsoft yahei";
+    color: #333;
+}
+.fd-list-li > p {
+    display: inline-block;
+    width: 162px;
+    margin-left: 2px;
+    font: 13px/22px "microsoft yahei";
+    color: #253341;
+    text-align: left;
+}
+.fd-banner {
+    position: absolute;
+    top: 19px;
+    right: 10px;
+    width: 173px;
+    height: 311px;
+    background: url("../images/banner.png") no-repeat;
 }
 /*--------------------  footer  --------------------*/
 .fd-footer-in {
@@ -475,10 +503,20 @@
     background-color: #fff;
 }
 .fd-link {
+    display: inline-table;
     width: 98%;
     height: 106px;
     margin: 0 auto;
     border-bottom: 1px solid #e9e9e9;
+    overflow: hidden;
+}
+.fd-link >span {
+    /*
+    display: inline-block;
+    */
+    width: 91px;
+    height: 72px;
+
 }
 .fd-right {
     width: 98%;
