@@ -119,8 +119,8 @@
     clear:both;
 }
 .fd-nav-layout {
+    position: relative;
     width: 100%;
-    height: 473px;
     border: 1px solid #d3d3d3\0;
     box-shadow: 0px 1px 3px #d3d3d3;
     background-color: #fff;
@@ -179,14 +179,469 @@
     background: url("../images/icon-07.png") no-repeat top center;
 }
 .fd-nav-con {
-    width: 1000px;
+    width: 1002px;
     margin: 0 auto;
 }
-.fd-nav-con > ul {
+.fd-nav-ul {
+    position: relative;
     width: 100%;
-    height: 376px;
+    height: 372px;
 }
-/*--------------------  section start   --------------------*/
+.fd-nav-ul > li {
+    position: absolute;
+    display: none;
+    box-sizing: border-box;
+    width: 100%;
+    border: 3px solid #d94d4c;
+    border-radius: 3px;
+}
+.fd-nav-ul .fd-nav-li-01 {
+    padding: 12px 0;
+    border: 0px;
+}
+.fd-nav-ul .fd-nav-li-02 {
+    padding: 37px 22px 19px;
+}
+.fd-pics {
+    position: relative;
+    float: left;
+    width: 608px;
+    height: 345px;
+}
+/**** 焦点新闻容器 *****/
+.fd-item-layout-01 {
+    float: right;
+    width: 382px;
+}
+.fd-item-layout-01 .fd-layout {
+    margin-top: 8px;
+    box-sizing: border-box;
+    padding: 0 15px;
+    width: 381px;
+    height: 295px;
+    border: 1px solid #e4e3e3;
+}
+.fd-img-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 46px;
+    font: 18.64px/46px "microsoft yahei";
+    color: #fff;
+    background-color: rgba(0,0,0,0.54);
+}
+.fd-img-title >h4 {
+    display: inline-block;
+    margin-left: 12px;
+}
+.fd-pics-pages >li {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.fd-pics-pages >li:hover,
+.fd-pics-pages >li.select {
+    border-color: #ce3d44;
+    background-color: #ce3d44;
+}
+.fd-pics-pages a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.fd-pics-pages {
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+}
+.fd-search-container {
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+    border: 2px solid #db5352;
+    border-radius: 3px;
+    background-color: #db5352;
+    line-height: 28px;
+}
+.fd-search-container > input {
+    width: 263px;
+    height: 38px;
+    border: 0;
+    line-height: normal;
+}
+.fd-search-container >span {
+    display: inline-block;
+    float: right;
+    margin-right: 23px;
+    padding: 6px 0 5px 44px;
+    vertical-align: middle;
+    background: url("../images/search-logo.png") no-repeat 2px center;
+    color: #fff;
+    font-size: 14px;
+    font-family: "microsoft yahei";
+    cursor: pointer;
+}
+.fd-item-title {
+    height: 85px;
+    margin: 18px 0 0;
+    border-bottom: 1px solid #dfe1e3;
+    color: #253341;
+    font-family: "microsoft yahei";
+}
+.fd-item-title > h4 {
+    font-size: 22px;
+    line-height: 42px;
+}
+.fd-item-title > h5 {
+    font-size: 16px;
+    line-height: 32px;
+}
+.fd-data-list-03 {
+    margin-top: 12px;
+    margin-left: 18px;
+    list-style: disc;
+    font: 14px/29.99px "microsoft yahei";
+    color: #253341;
+}
+.fd-data-list-03 a {
+    text-decoration: none;
+}
+.fd-data-list-03 a:hover,
+.fd-data-list-03 .select {
+    color: #d94d4c;
+}
+.fd-more {
+    display: inline-block;
+    box-sizing: border-box;
+    padding-left: 18px;
+    margin-top: 12px;
+    width: 100%;
+    height: 35px;
+    font: 14px/35px "microsoft yahei";
+    border: 1px solid #d94d4c;
+    border-radius: 3px;
+    color: #fff;
+    background: url("../images/more.png") no-repeat 97% center #d94d4c;
+
+}
+.fd-more:hover {
+    text-decoration: none;
+}
+/************ 新闻页签的内容  ************/
+.fd-nav-layer-01 {
+    float: left;
+    box-sizing: border-box;
+    width: 357px;
+    padding-right: 18px;
+}
+.fd-sub-nav-02 {
+    width: 100%;
+    height: 38px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #d0d2d4;
+}
+.fd-sub-nav-02 li {
+    float: left;
+    margin: 0 7px;
+}
+.fd-sub-nav-02 a {
+    display: inline-block;
+    padding: 0 9px 10px;
+    font-size: 19px;
+    font-family: "microsoft yahei";
+    color: #23272b;
+}
+.fd-sub-nav-02 li:first-child {
+    margin-left: 0px;
+}
+.fd-sub-nav-02 a:hover,
+.fd-sub-nav-02 a.select {
+    color: #d40000;
+    border-bottom: 3px solid #d40000;
+    text-decoration: none;
+}
+.fd-nav-layer-02 {
+    float: right;
+    width: 590px;
+    box-sizing: border-box;
+    padding-left: 16px;
+    border-left: 1px solid #cfcfcf;
+}
+/****************  带三角符号的数据集样式 *******************/
+.fd-list-04-container {
+    box-sizing: border-box;
+    width: 100%;
+    height: 279px;
+    padding: 40px 18px 28px 5px;
+}
+.fd-data-list-04 {
+    width: 100%;
+}
+.fd-data-list-04 > li {
+    padding-left: 24px;
+    font: 14px/32px "microsoft yahei";
+    color: #253341;
+    background: url("../images/triggle.png") no-repeat left center;
+}
+.fd-data-list-04 > li:hover {
+    color: #e4393c;
+    background: url("../images/triggle-02.png") no-repeat left center;
+}
+.fd-data-list-04 > li:hover a {
+    text-decoration: none;
+    color: #e4393c;
+}
+.fd-nav-layer-02 .fd-data-list-04 > li{
+    float: left;
+    box-sizing: border-box;
+    width: 282px;
+}
+.fd-nav-layer-02 .fd-data-list-04 {
+    margin-top: 13px;
+}
+.fd-data-list-04 .even {
+    margin-left: 9px;
+}
+.fd-data-list-04:after {
+    content:'.';
+    height:0;
+    visibility:hidden;
+    display:block;
+    clear:both;
+}
+.fd-img-container {
+    margin-top: 25px;
+}
+.fd-img-container > img {
+    float: left;
+    display: block;
+    width: 268px;
+    height: 179px;
+}
+.fd-nav-layer-02 .fd-item-con {
+    float: right;
+    width: 280px;
+    margin-left: 12px;
+}
+.fd-item-con > p {
+    margin-top: 21px;
+    width: 100%;
+    font: 14px/23.99px "microsoft yahei";
+    color: #676e75;
+    text-indent:20px;
+}
+.fd-item-con > h4 {
+    font: 18px/29px "microsoft yahei";
+    font-weight: bold;
+    color: #253341;
+}
+
+/*******************热点专题****************/
+.fd-nav-li-03 {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 36px 25px 23px;
+}
+.fd-nav-li-03 h3 {
+    box-sizing: border-box;
+    height: 38px;
+    padding-bottom: 11px;
+    border-bottom: 1px solid #d0d2d4;
+}
+.fd-nav-li-03 > div:first-child {
+    box-sizing: border-box;
+    float: left;
+    width: 515px;
+    padding-right: 25px;
+    border-right: 1px solid #cfcfcf;
+}
+
+.fd-nav-li-03> div:last-child {
+    box-sizing: border-box;
+    float: left;
+    width: 414px;
+    padding-left: 27px;
+
+}
+.fd-nav-li-03 .fd-module-title {
+    font: 19.99px/normal "microsoft yahei";
+    height: 35px;
+}
+.fd-item-logo {
+    float: left;
+    width: 121px;
+    height: 245px;
+    background: url("../images/banner-02.png");
+}
+.fd-con-layer {
+    box-sizing: border-box;
+    padding-top: 29px;
+}
+.fd-con-layer:after {
+    content:'.';
+    height:0;
+    visibility:hidden;
+    display:block;
+    clear:both;
+}
+.fd-data-list-05 {
+    float: right;
+    width: 354px;
+    margin-left: 10px;
+}
+.fd-data-list-05:after{
+    content:'';
+}
+.fd-data-list-05 >li {
+    font: 14px/37.99px "microsoft yahei";
+}
+.fd-data-list-05 >li a:hover {
+    text-decoration: none;
+}
+.fd-banner-01 {
+    margin-top: 29px;
+    width: 382px;
+    height: 105px;
+    background: url("../images/banner-03.png");
+}
+.fd-banner-02 {
+    margin-top: 22px;
+    width: 382px;
+    height: 105px;
+    background: url("../images/banner-04.png");
+}
+/**************  审判执行 ***************/
+.fd-nav-li-04 {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 19px 16px 16px;
+}
+.fd-nav-li-04 div:first-child {
+    box-sizing: border-box;
+    width: 538px;
+    height: 100%;
+    border-right: 1px solid #d3d4d5;
+    padding-right: 9px;
+}
+.fd-data-list-06:after {
+    content:'.';
+    height:0;
+    visibility:hidden;
+    display:block;
+    clear:both;
+}
+.fd-data-list-06 >li {
+    float: left;
+    box-sizing: border-box;
+    width: 127px;
+    height: 46px;
+    padding-right: 10px;
+    margin-right: 5px;
+    margin-top: 15px;
+    font: 16px/46px "microsoft yahei";
+    color: #253341;
+    border: 1px solid #d5d7dc;
+    text-align: right;
+}
+.fd-data-list-06 >li a {
+    display: inline-block;
+    padding-left: 38px;
+}
+.fd-data-01 {
+    background: url("../images/icon-08.png")no-repeat left center;
+}
+.fd-data-02 {
+    background: url("../images/icon-09.png")no-repeat left center;
+}
+.fd-data-03 {
+    background: url("../images/icon-10.png")no-repeat left center;
+}
+.fd-data-04 {
+    background: url("../images/icon-11.png")no-repeat left center;
+}
+.fd-data-05 {
+    background: url("../images/icon-12.png")no-repeat left center;
+}
+.fd-data-06 {
+    background: url("../images/icon-13.png")no-repeat left center;
+}
+.fd-data-07 {
+    background: url("../images/icon-14.png")no-repeat left center;
+}
+.fd-data-08 {
+    background: url("../images/icon-15.png")no-repeat left center;
+}
+.fd-data-09 {
+    background: url("../images/icon-16.png")no-repeat left center;
+}
+.fd-data-10 {
+    background: url("../images/icon-17.png")no-repeat left center;
+}
+.fd-data-11 {
+    background: url("../images/icon-18.png")no-repeat left center;
+}
+.fd-data-12 {
+    background: url("../images/icon-19.png")no-repeat left center;
+}
+.fd-data-13{
+    background: url("../images/icon-20.png")no-repeat left center;
+}
+.fd-data-14{
+    background: url("../images/icon-21.png")no-repeat left center;
+}
+
+/************** 法院建设  **************************/
+.fd-nav-li-05 {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 22px 22px 22px 14px;
+}
+.fd-nav-li-05 > div:first-child {
+    float: left;
+    box-sizing: border-box;
+    width: 430px;
+    height: 100%;
+    padding-right: 3px;
+}
+.fd-nav-li-05 > div:last-child {
+    float: left;
+    box-sizing: border-box;
+    width: 530px;
+    height: 100%;
+    padding-left: 16px;
+    border-left: 1px solid #d3d6d9;
+}
+.fd-nav-li-05 .fd-data-list-06 li {
+    margin-right: 15px;
+    margin-top: 23px;
+}
+.fd-nav-li-05 h3 {
+    border-bottom: 1px solid #d0d2d4;
+}
+.fd-data-container {
+    float: left;
+    box-sizing: border-box;
+    width: 255px;
+    padding-left: 16px;
+    margin-top: 29px;
+}
+.fd-nav-li-05 .fd-img-02 {
+    box-sizing: border-box;
+    width: 258px;
+    height: 206px;
+    margin-top: 29px;
+}
+.fd-special > li {
+    padding-left: 17px;
+    line-height: 32.99px;
+}
+    /*--------------------  section start   --------------------*/
 .fd-item-01 {
     padding: 9px 9px 14px 9px;
     width: 98.2%;
@@ -194,7 +649,6 @@
     border: 1px solid #ededed;
     background-color: #fff;
 }
-
 .fd-layer-01 {
     width: 169px;
     float: left;
@@ -298,7 +752,6 @@
 .fd-module-title {
     display: inline-block;
     padding-left: 14px;
-    width: 85px;
     height: 34px;
     border-bottom: 4px solid #d94d4c;
     background: url("../images/module-title-bg.png") no-repeat 2px center;
@@ -428,7 +881,7 @@
     margin-top: 14px;
     box-sizing: border-box;
     padding: 18px 7px;
-    width: 97.6%;
+    width: 100%;
     /*
     height: 317px;
     */
@@ -503,21 +956,53 @@
     background-color: #fff;
 }
 .fd-link {
-    display: inline-block;
     width: 98%;
     height: 106px;
     margin: 0 auto;
     border-bottom: 1px solid #e9e9e9;
-    vertical-align: middle;
     overflow: hidden;
-}
-.fd-link >span {
+    font-size: 14px;
+    font-family: "microsoft yahei";
+    color: #151e28;
+    vertical-align: middle;
+    line-height: 106px;
 
 }
+.fd-link-container {
+    width: 400px;
+    margin: 0 auto;
+}
+.fd-link-container > a {
+    display: inline-block;
+    width: 91px;
+    padding-top: 53px;
+    text-align: center;
+    line-height: normal;
+    vertical-align: middle;
+}
+.fd-link-container > a:hover {
+    text-decoration: none;
+}
+.fd-link-01 {
+    background: url("../images/icon-link-01.png") no-repeat center top;
+}
+.fd-link-02 {
+    margin-left: 38px;
+    background: url("../images/icon-link-02.png") no-repeat center top;
+}
+.fd-link-03 {
+    margin-left: 38px;
+    background: url("../images/icon-link-03.png") no-repeat center top;
+}
 .fd-right {
+    box-sizing: border-box;
+    padding-top: 10px;
     width: 98%;
     height: 65px;
     margin: 0 auto;
+    text-align: center;
+    font: 12px/21.99px "microsoft yahei";
+    color: #253341;
 }
 /*----------------  2    ---------------- */
 /*------------   3 ------------*/
